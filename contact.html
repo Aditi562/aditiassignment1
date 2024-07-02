@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Form Example</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background-color: #070706b9;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+    }
+    .header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .header .site-name {
+        flex-grow: 1;
+        text-align: left;
+        background-color: black;
+        padding: 10px;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        cursor: pointer;
+
+    }
+    .header .contact {
+        background-color: #f0f0f0;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+    p.para {
+        background: #f1f1f1;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+    form {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type=text], input[type=email], select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=checkbox] {
+        margin-right: 10px;
+    }
+    
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <img src="/assignment1.html/240_F_355000254_XZoh3jPvq6WqhhvAkVoksP7R51LIbs6y.jpg"
+        <div class="site-name"><a href="PORTFOLIO.html">anime.com</a></div>
+        <div class="contact"><a href="contact.html" >CONTACT</a></div>
+
+    </div>
+
+<div class="container">
+    <p class="para">we are a review team who provide knowledge about different cartoons and animes.any help youcan contact us with following options</p>
+    <h2>Form</h2>
+    <form action="/submit-your-form-handler" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="genre">Favourite:</label>
+            <select id="genre" name="genre" required>
+                <option value="comedic">comedic</option>
+                <option value="psychological">psychological</option>
+                <option value="romantic">romantic</option>
+                <option value="horror">horror</option>
+                <option value="philosophical">philosophical</option>
+                <option value="inspiratonal">inspirational</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter via email</label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+    <div class="footer">
+        &copy; 2024 anime.com. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
